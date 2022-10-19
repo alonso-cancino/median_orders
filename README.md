@@ -4,7 +4,7 @@ A median order of a tournament $T=(V,E)$ is an ordering of the vertices $\sigma:
 
 $$e(\sigma,T) = |\{ e\in E(T) : \sigma(e_{1}) \leq \sigma(e_{2}) \}|$$
 
-This is equivalent to the following optimization problem:
+This is equivalent to the following optimization problem, where $A$ is the adjacency matrix of $T$ with respect to some arbitrary ordering $\nu:V(T)\to [n]$:
 
 $$\max_{P\in \mathbb{N}^{(n,n)}} \sum\limits_{i =1}^{n} \sum_{j=1}^n (P^{t}AP)_{i,j}$$
 
